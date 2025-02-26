@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Insight.css'; // Import the CSS file
+import Sidebar from './Sidebar';
 
 const Insight = () => {
   const [names, setNames] = useState([]);
@@ -131,6 +132,8 @@ const Insight = () => {
   }
 
   return (
+    <>
+    <Sidebar/>
     <div className="insight-container">
       <h1>Insights Dashboard</h1>
 
@@ -261,6 +264,8 @@ const Insight = () => {
       </div>
 
     </div>
+    </>
+
   );
 };
 

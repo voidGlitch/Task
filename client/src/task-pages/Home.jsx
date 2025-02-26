@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from './Sidebar';
 
 const Home = () => {
   return (
+    <>
+    <Sidebar/>
     <div style={styles.container}>
       <h1 style={styles.heading}>Welcome to the Insurance Policy Management System</h1>
       <p style={styles.subHeading}>Manage your policies efficiently and effectively.</p>
@@ -19,6 +22,8 @@ const Home = () => {
         </Link>
       </div>
     </div>
+    </>
+
   );
 };
 

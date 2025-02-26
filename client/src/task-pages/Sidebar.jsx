@@ -18,7 +18,7 @@ export default function Sidebar() {
 
   // Handle logout
   const handleLogout = () => {
-    dispatch({ type: "LOGOUT" }); // Dispatch the logout action
+    dispatch({ type: "USER_LOGOUT" }); // Dispatch the logout action
     navigate("/sign"); // Redirect to the sign-in page
   };
 
